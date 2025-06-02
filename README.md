@@ -1,1 +1,1 @@
-# CompantName
+# CompanyName

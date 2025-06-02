@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react';
+import { useNavigation } from 'react-router-dom';
 
 import logo from '@/assets/logo.svg';
+import { AppSidebar } from '@/components/layouts/app-sidebar';
 import { paths } from '@/config/paths';
 
-import { AppSidebar } from '@/components/layouts/app-sidebar';
-import { useNavigation } from 'react-router-dom';
 import Header from '../layouts/header';
+
 import { Link } from './link';
 import { SidebarInset, SidebarProvider } from './sidebar';
 
@@ -18,8 +19,7 @@ import { SidebarInset, SidebarProvider } from './sidebar';
 const Logo = () => {
   return (
     <Link className="flex items-center text-white" to={paths.home.getHref()}>
-      <img className="h-8 w-auto" src={logo} alt="Workflow" />
-      <span className="text-sm font-semibold text-white">CompantName</span>
+      <span className="text-sm font-semibold text-white">CompanyName</span>
     </Link>
   );
 };
@@ -58,7 +58,7 @@ const Progress = () => {
 
   return (
     <div
-      className="fixed left-0 top-0 h-1.5 bg-primary transition-all duration-200 ease-in-out z-50"
+      className="fixed left-0 top-0 z-50 h-1.5 bg-primary transition-all duration-200 ease-in-out"
       style={{ width: `${progress}%` }}
     ></div>
   );
