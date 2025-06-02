@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import logo from '@/assets/logo.svg';
 import { Head } from '@/components/seo';
 import { Button } from '@/components/ui/button';
 import { paths } from '@/config/paths';
@@ -33,7 +32,6 @@ export const LandingRoute = () => {
           <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             <span className="block">Welcome to CompanyName</span>
           </h2>
-          <img src={logo} alt="react" width="250" className="mx-auto my-8" />
           <div className="mt-8 flex justify-center">
             <div className="inline-flex rounded-md shadow">
               <Button onClick={handleStart}>Login</Button>
