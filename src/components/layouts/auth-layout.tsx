@@ -2,7 +2,6 @@ import * as React from 'react';
 import { useEffect } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 
-import logo from '@/assets/logo.svg';
 import { Head } from '@/components/seo';
 import { paths } from '@/config/paths';
 import { useUser } from '@/lib/auth';
@@ -45,10 +44,9 @@ export const AuthLayout = ({ children, title, type }: LayoutProps) => {
         </div>
       )}
       {type === 'register' && (
-        <div className="flex min-h-screen justify-center items-center bg-white">
-          <div className="flex flex-col max-w-md w-full">
-            <img className="mx-auto h-24 w-auto mb-8" src={logo} alt="logo" />
-            <div className="bg-white w-full p-6 shadow-xl rounded-lg">
+        <div className="flex min-h-screen items-center justify-center bg-white">
+          <div className="flex w-full max-w-md flex-col">
+            <div className="w-full rounded-lg bg-white p-6 shadow-xl">
               {children}
             </div>
           </div>

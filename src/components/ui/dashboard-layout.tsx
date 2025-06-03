@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useNavigation } from 'react-router-dom';
 
-import logo from '@/assets/logo.svg';
 import { AppSidebar } from '@/components/layouts/app-sidebar';
 import { paths } from '@/config/paths';
 
